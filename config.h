@@ -7,6 +7,7 @@
  */
 static char *font = "Fira Code:pixelsize=26:antialias=true:autohint=true";
 static char *font2[] = { "Fira Code:pixelsize=20:antialias=true:autohint=true" };
+static char *font3 = "Fira Code:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -188,8 +189,8 @@ static uint forcemousemod = ShiftMask;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
-		{ "fontalt0",     STRING,  &font2[0] },
+		{ "font",         STRING,  &font3 },
+		{ "fontalt0",     STRING,  &font3 },
 		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
