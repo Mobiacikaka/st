@@ -5,9 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:pixelsize=26:antialias=true:autohint=true";
-static char *font2[] = { "Fira Code:pixelsize=20:antialias=true:autohint=true" };
-static char *font3 = "Fira Code:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Fira Code:pixelsize=20:antialias=true:autohint=true";
+static char *font2[] = { "Fira Code:pixelsize=18:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -189,8 +188,8 @@ static uint forcemousemod = ShiftMask;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font3 },
-		{ "fontalt0",     STRING,  &font3 },
+		{ "font",         STRING,  &font },
+		{ "fontalt0",     STRING,  &font },
 		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
@@ -249,8 +248,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ ControlMask,			XK_equal,		zoom,			{.f = +1} },
-	{ ControlMask,			XK_minus,		zoom,			{.f = -1} },
+	{ ControlMask,			XK_equal,		zoom,			{.f = +2} },
+	{ ControlMask,			XK_minus,		zoom,			{.f = -2} },
 	{ ControlMask,			XK_0,			zoomreset,		{.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
